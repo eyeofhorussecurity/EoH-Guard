@@ -1,0 +1,17 @@
+{
+  "name": "EoH Security",
+  "description": "Flags pages with phishing indicators using URL + DOM heuristics.",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "EoH Security",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage", "tabs", "scripting", "webNavigation"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": { "128": "icons/128.png" }
+}
